@@ -312,31 +312,31 @@ $(function(){
 		});
 		$('[data-item-list="fav"]').append(createDom(fav_items));
 
-		//お気に入りのスライダー
-		const fav_slide_count = $(window).width() >= 768 ? 5 : 3;
-		if(fav_items.length > fav_slide_count){
-			$('[data-item-list="fav"]').slick({
-				arrows:true,
-				autoplay:true,
-				dots:false,
-				speed:1500,
-				easing:'swing',
-				slidesToShow:5,
-				slidesToScroll:1,
-				prevArrow:'<div class="slide-btn prev-btn"></div>',
-				nextArrow:'<div class="slide-btn next-btn"></div>',
-				responsive:[
-					{
-						breakpoint:768,
-						settings:{
-							centerPadding:'0%',
-							slidesToShow:3,
-							slidesToScroll:1,
-						}
-					}
-				]
-			});
-		}
+	// お気に入りスライダー	
+		const fav_slide_count = $(window).width() >= 768 ? 5 : 3; 
+		if( fav_items.length > fav_slide_count ){ 
+		    $('[data-item-list="fav"]').slick({
+			arrows:true,
+			autoplay:true,
+			dots:false,
+			speed:1500,
+			easing:'swing',
+			slidesToShow:5,
+			slidesToScroll:1,
+			prevArrow:'<div class="slide-btn prev-btn"></div>',
+			nextArrow:'<div class="slide-btn next-btn"></div>',
+			responsive:[
+			    {
+				breakpoint:768,
+				settings:{
+				    centerPadding:'0%',
+				    slidesToShow:3,
+				    slidesToScroll:1,
+				}
+			    }
+			]
+		    });
+		}  
 	}
 
 
