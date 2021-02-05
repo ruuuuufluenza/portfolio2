@@ -31,7 +31,7 @@ $(function(){
 		let html_template = '';
 		let delate_dom = '';
 		if(delate_btn_flg){
-			delate_dom = '<div class="cart-delate"><img src="img/icon_delete.svg"></div>';
+			delate_dom = '<div class="cart-delate"><img src="icon_delete.svg"></div>';
 		}
 		items.forEach(function(item, index){
 			html_template += `<li class="item" data-item-id="${item['id']}">
