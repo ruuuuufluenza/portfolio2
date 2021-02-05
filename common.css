@@ -93,11 +93,11 @@ a img:hover{
 
 .prev-btn {
   left: 0;
-  background: url(../img/arrow_prev.png) no-repeat center/cover;
+  background: url(arrow_prev.png) no-repeat center/cover;
 }
 .next-btn {
   right: 0;
-  background: url(../img/arrow_next.png) no-repeat center/cover;
+  background: url(arrow_next.png) no-repeat center/cover;
 }
 
 .slick-slide {
@@ -176,7 +176,7 @@ body {
     border-radius: 3px;
     padding: 8px 10px 8px 40px;
     font-size: 15px;
-    background: url(../img/icon_search.svg) 10px center no-repeat;
+    background: url(icon_search.svg) 10px center no-repeat;
     background-size: 18px;
     outline: none;
     transition: all .3s;
